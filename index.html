@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhaz's App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="popup">
+        <h1 class="welcome">Welcome</h1>
+    </div>
+
+    <div class="login-box">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="input-box">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="watermark">Made by Minhaz</div>
+
+    <!-- Option buttons after login -->
+    <div class="options" style="display: none;">
+        <button id="searchBtn">Search</button>
+        <button id="noteBtn">Note</button>
+        <button id="aboutBtn">About</button>
+        <button id="backBtn">Back</button> <!-- Back button -->
+    </div>
+
+    <!-- Notepad interface -->
+    <div class="notepad" style="display: none;">
+        <div class="toolbar">
+            <button id="createNew">Create New</button>
+        </div>
+        <div class="note-content">
+            <textarea id="noteArea" rows="10" cols="30" placeholder="Start writing..."></textarea>
+        </div>
+        <div class="actions">
+            <button id="deleteBtn">Delete</button>
+            <button id="copyBtn">Copy</button>
+        </div>
+        <div class="previous-notes">
+            <h3>Previous Notes:</h3>
+            <!-- Previous notes will be populated here -->
+        </div>
+        <button id="backFromNoteBtn">Back</button> <!-- Back button for notepad -->
+    </div>
+
+    <!-- About Section -->
+    <div class="about" style="display: none;">
+        <h2>About Me</h2>
+        <p><strong>Name:</strong> Minhaz</p>
+        <p><strong>Age:</strong> 18</p>
+        <p><strong>E-mail:</strong> <a href="mailto:minhazceo@gmail.com">minhazceo@gmail.com</a></p>
+        <button onclick="window.open('https://www.facebook.com/minhaz.info404', '_blank')">FB</button>
+        <button id="backFromAboutBtn">Back</button> <!-- Back button for About section -->
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
