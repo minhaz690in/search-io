@@ -1,0 +1,165 @@
+/* Background */
+body {
+    background-color: darkolivegreen; /* Dark Olive background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Pop-up */
+.popup {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    animation: fadeIn 2s forwards;
+}
+
+.welcome {
+    font-family: 'Minecraft', sans-serif; /* Minecraft font */
+    color: #ffffff;
+    font-size: 36px;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000; /* Glow effect */
+}
+
+/* Login Box */
+.login-box {
+    display: none;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.input-box {
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #0066cc; /* Professional glow effect */
+}
+
+button:hover {
+    background-color: #004d99;
+}
+
+/* Watermark */
+.watermark {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-family: 'Ninja', sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Option Buttons */
+.options {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.options button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #0066cc;
+}
+
+.options button:hover {
+    background-color: #004d99;
+}
+
+/* Notepad interface */
+.notepad {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.toolbar {
+    margin-bottom: 10px;
+}
+
+.note-content {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.actions button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff6600;
+}
+
+.actions button:hover {
+    background-color: #cc5200;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Previous Notes Section */
+.previous-notes {
+    margin-top: 20px;
+}
+
+.previous-note {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.previous-note:hover {
+    background-color: #e0e0e0;
+}
